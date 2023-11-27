@@ -10,7 +10,7 @@ const authRoute=require('./routes/auth.js')
 const userRoute=require('./routes/users.js')
 const postRoute=require('./routes/posts.js')
 const commentRoute=require('./routes/comments.js')
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.BASE;
 // const PORT = process.env.PORT || 3000;
 dotenv.config()
 //database
