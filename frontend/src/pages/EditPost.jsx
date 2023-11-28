@@ -9,7 +9,6 @@ import { UserContext } from "../context/UserContext"
 
 
 const EditPost = () => {
-
     const postId=useParams().id
     const {user}=useContext(UserContext)
     const navigate=useNavigate()
@@ -49,11 +48,8 @@ const EditPost = () => {
         data.append("img",filename)
         data.append("file",file)
         post.photo=filename
-        // console.log(data)
-        //img upload
         try{
           const imgUpload=await axios.post(URL+"/api/upload",data)
-          // console.log(imgUpload.data)
         }
         catch(err){
           console.log(err)
